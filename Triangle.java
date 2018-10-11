@@ -16,7 +16,19 @@ public class Triangle {
 	}
 
 	public double getPerimeter() {
-		return 
+		return v1.distance(Point v2) + v2.distance(Point v3) + v1.distance(Point v3);
 	}
+
+	public Point getVertex(int a) {
+
+	}
+
+	public void setVertex(int a, Point p) {
+
+	}
+
+	public String toString(){
+		return "Triangle: A(" +  B(-2.3,5.001) C(5.0,0.52)";
+	} 
 
 
