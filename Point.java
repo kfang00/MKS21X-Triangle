@@ -28,6 +28,6 @@ public class Point{
 	}
 
 	public String toString(){
-		return "Point: (" + getX() + "," + getY() + ")";
+		return getX() + "," + getY();
 	} 
 }
