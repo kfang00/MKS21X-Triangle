@@ -19,16 +19,35 @@ public class Triangle {
 		return v1.distance(Point v2) + v2.distance(Point v3) + v1.distance(Point v3);
 	}
 
-	public Point getVertex(int a) {
+	public Point getVertex(int index) {
+		Point out;
+    		if (index == 0){
+      			out = new Point(v1);
+    		}
+    		else if (index == 1){
+      			out = new Point(v2);
+   	 	}
+    		else{
+      			out = new Point(v3);
+    		}
+    		return out;
 
 	}
 
-	public void setVertex(int a, Point p) {
-
+	public void setVertex(int index, Point newP) {
+		if (index == 0){
+      			v1 = newP;
+    		}
+    		else if (index == 1){
+      			v2 = newP;
+   	 	}
+    		else{
+      			v3 = newP;
+    		}
 	}
 
 	public String toString(){
-		return "Triangle: A(" +  B(-2.3,5.001) C(5.0,0.52)";
+		return "Triangle: A(" + getVertex(0) + ") B(" + getVertex(1) + ") C(" + getVertex(2) + ")";
 	} 
 
 
